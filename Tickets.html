@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticket Page</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Tickets.css">
+</head>
+<body>
+
+    <div class="main">
+    <nav class="nav">
+        <img src="images/logo.png" alt="Logo" height="80">
+        <ul class="woi">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Rides.html">Rides</a></li>
+            <li><a href="Tickets.html">Tickets</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="menu-icon">
+            <div id="btn_v2" onclick="darkMode()">
+                <i class="bx bx-moon" style="font-size: 1.8rem;" id="icon"></i>
+            </div>
+      
+            <i class="bx bx-menu" id="kop" style="font-size: 27px;" onclick="toggleMenu()"></i>
+        </div>
+        
+
+        <div id="mobile-menu" class="mobile-menu">
+            <ul class="woi">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Rides.html">Rides</a></li>
+                <li><a href="Tickets.html">Tickets</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+            <h2 id="qo_t">Buy Funland Express tickets</h2>
+            <p>Get ready for worlds of fun! Explore all your ticket and Annual Pass options.</p>
+        
+    </div>
+
+    
+    <div class="QRP">
+        <div class="ticket-container">
+            <div class="ticket">
+                <div class="ticket-header">Bronze Ticket (Basic)</div>
+                <img src="images/image_7.webp" alt="Bronze Ticket">
+                    <p class="price">$29</p>
+                    <p id="book">Book in advance to save</p>
+                    <ul class="rip">
+                        <li class="qiw"> Everything in Bronze Ticket</li>
+                        <li class="qiw"> Entry to the amusement park</li>
+                        <li class="qiw"> Access to standard rides & attractions</li>
+                        <li class="qiw"> Free soft drink or snack</li>
+                        <li class="qiw"> Valid for one day</li>
+                    </ul>
+                    <button class="btn" onclick="buyTicket('Bronze Ticket')">Buy Now</button>
+            </div>
+    
+            <div class="ticket">
+                <div class="ticket-header">Silver Ticket (Premium)</div>
+                <img src="images/image_4.webp" alt="Silver Ticket">
+                    <p class="price">$49</p>
+                    <p id="book">Enjoy premium benefits</p>
+                    <ul class="rip">
+                        <li class="qiw"> Everything in Silver Ticket</li>
+                        <li class="qiw"> Fast-pass access (skip long ride lines)</li>
+                        <li class="qiw"> Access to exclusive rides & attractions</li>
+                        <li class="qiw"> Free meal at selected restaurants</li>
+                        <li class="qiw"> Discount on in-park purchases</li>
+                    </ul>
+                    <button class="btn" onclick="buyTicket('Silver Ticket')">Buy Now</button>
+                </div>
+    
+            <div class="ticket">
+                <div class="ticket-header">Gold Ticket (VIP Experience)</div>
+                <img src="images/image_8.webp" alt="Gold Ticket">
+                <div>
+                    <p class="price">$79</p>
+                    <p id="book">The Ultimate Thrill Package</p>
+                    <ul class="rip">
+                        <li class="qiw"> Everything in Gold Ticket</li>
+                        <li class="qiw"> Unlimited fast-pass access for all rides</li>
+                        <li class="qiw"> VIP lounge access with free refreshments</li>
+                        <li class="qiw"> Meet & Greet with park characters</li>
+                        <li class="qiw"> Exclusive souvenir & free parking</li>
+                    </ul>
+                    <button class="btn" onclick="buyTicket('Gold Ticket')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-info">
+                <h3><strong>Funland Express</strong></h3>
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem, ipsum dolor.</p>
+                <p>35037 Marburg</p>
+            </div>
+            <div class="footer-contacts">
+                
+                
+                <p><i class="bx bx-envelope" id="wmp">:</i>Username_14644564@gmail.com</p>
+                <p id="ow_w"><i class="bx bx-phone" id="wmf" style="position: relative; right: 15px;">:</i>+92-30-19437332-6</p>
+            </div>
+            <div class="footer-button">
+                <a href="contact.html" class="contact-btn">Contact Us</a>
+            </div>
+        </div>
+    
+        <hr />
+    
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-youtube"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <div class="footer-links">
+                <p>Funland Express © 2025 - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="JS/now.js">
+        
+    </script>
+
+
+</body>
+</html>

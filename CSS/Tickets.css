@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #ADD8E6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #003366;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav h1 img {
+    height: 85px;
+    width: 85px;
+}
+
+
+
+
+nav  .woi {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    position: relative;
+    text-align: center;
+    right: 3%;
+}
+
+nav .woi li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+
+
+nav .menu, .woi li:hover {
+    transform: scale(1.2);
+}
+
+
+.menu-icon {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.menu-icon #icon {
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+    position: relative;
+    right: 13px;
+}
+
+.menu-icon #kop {
+    color: white;
+    font-size: 1.7rem;
+    margin: 5px;
+    transition: color 0.3s ease;
+}
+
+button {
+    background-color: #4A90E2;
+    color: white;
+}
+
+button:hover {
+    background-color: #007BB5;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode nav {
+    background-color: #003366;
+    color: white;
+}
+
+body.dark-mode .woi li a {
+    color: white;
+}
+
+body.dark-mode .menu-icon #icon {
+    color: yellow; 
+}
+
+
+#mobile-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    visibility: hidden; 
+    opacity: 0;
+}
+
+#mobile-menu.active {
+    transform: translateY(0);
+    visibility: visible; 
+    opacity: 1;
+}
+
+
+#mobile-menu .woi {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mobile-menu .woi li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#mobile-menu .woi li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: inline-block; 
+    padding: 10px 20px; 
+    width: 100%;
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease;
+}
+
+#mobile-menu .woi li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+.menu-icon #kop {
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    nav .woi {
+        display: none;
+    }
+
+    .menu-icon #kop {
+        display: block;
+        color: white;
+        font-size: 1.7rem;
+        margin: 5px;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #003366;
+        color: white;
+        z-index: 999;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform: translateY(-100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #mobile-menu.active {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #mobile-menu .woi {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #mobile-menu .woi li {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 10px 15px;
+    }
+
+    nav .woi li a {
+        font-size: 18px;
+        padding: 10px 20px; 
+    }
+
+    .menu-icon i {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 10px 10px;
+    }
+
+    nav .woi {
+        display: none;
+    }
+
+    .menu-icon #kop {
+        display: block;
+        color: white;
+        font-size: 1.7rem;
+        margin: 5px;
+    }
+
+    #mobile-menu .woi li a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+.container{
+    position: relative;
+    right: 4%;
+}
+
+ h2 {
+    color: black;
+    font-size: 50px;
+    width: 700px;
+    position: relative;
+    left: 400px;
+    top: 30px;
+}
+
+
+
+.container p{
+    position: relative;
+    text-align: center;
+    position: relative;
+    left: 60px;
+    color: black;
+    top: 5px;
+    font-size: 20px;
+    top: 30px;
+
+}
+
+body.dark-mode h2 {
+    color: white;
+}
+
+body.dark-mode p {
+    color: white;
+}
+
+.container img{
+    background: transparent;
+}
+
+
+.browse{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.browse #price{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    left: -10px;
+    font-size: 30px;
+    
+}
+
+
+.QRP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+}
+.ticket-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ticket {
+    background: white;
+    border-radius: 10px;
+    padding: 0;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-top: 5px solid #ff6600;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.ticket-container .ticket:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+.ticket-header {
+    background: #002147;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.price {
+    font-size: 28px;
+    color: black;
+    margin: 10px 0;
+}
+
+.ticket img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.rip {
+    list-style: none;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+}
+
+.rip .qiw {
+    padding: 5px 0;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.btn {
+    display: block;
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #cc5200;
+}
+
+
+
+body.dark-mode .ticket .price {
+    color: black;
+}
+
+body.dark-mode .ticket p {
+    color: black;
+}
+
+
+.ticket p {
+    color: black;
+    font-weight: bolder;
+}
+
+.ticket #book{
+    font-size: 17px;
+}
+
+
+
+.ticket ul li  {
+    font-weight: bold;
+}
+
+.main{
+    flex-wrap: wrap;
+}
+
+
+footer {
+    background-color: #002147;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px;
+}
+
+.footer-info h3 {
+    position: relative;
+    left: 530px;
+    bottom: 15px;
+    font-size: 30px;
+}
+
+.footer-contacts{
+    position: relative;
+    top: 30px;
+}
+
+.footer-contacts a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contacts p {
+    position: relative;
+    top: 15px;
+}
+
+.footer-contacts #wmp{
+    padding-right: 10px;
+}
+
+
+
+.footer-contacts #ow_w{
+    position: relative;
+    right: 65px;
+}
+.footer-contacts #ow_w #wmf{
+    margin-left: 50px;
+}
+
+.footer-button .contact-btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 60px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    top: 40px;
+}
+
+.footer-button .contact-btn:hover {
+    background-color: #0055aa;
+}
+
+.footer hr {
+    border: 0.5px solid #ffffff50;
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.footer-links p{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    right: 400px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
